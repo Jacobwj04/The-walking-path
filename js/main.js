@@ -1,14 +1,16 @@
+
+
 const buttonMenu = document.getElementById("buttonMenu");
 const buttonClose = document.getElementById("buttonClose");
 const menu = document.getElementById("menu");
 
-function showMenu(){
+function showMenu() {
     menu.style.display = "flex";
     buttonMenu.style.display = "none";
     buttonClose.style.display = "block";
 }
 
-function hideMenu(){
+function hideMenu() {
     menu.style.display = "none";
     buttonMenu.style.display = "block";
     buttonClose.style.display = "none";
@@ -18,13 +20,13 @@ const buttonMenu2 = document.getElementById("buttonMenu2");
 const buttonClose2 = document.getElementById("buttonClose2");
 const menuTeam = document.getElementById("menuTeam");
 
-function showMenuTeam(){
+function showMenuTeam() {
     menu.style.display = "flex";
     buttonMenu.style.display = "none";
     buttonClose.style.display = "block";
 }
 
-function hideMenuTeam(){
+function hideMenuTeam() {
     menu.style.display = "none";
     buttonMenu.style.display = "block";
     buttonClose.style.display = "none";
@@ -40,8 +42,8 @@ const button2 = document.getElementById("button2");
 
 const counter = document.getElementById("counter");
 
-function showPage1(){
-    for(let i = 0; i < page1.length; i++){
+function showPage1() {
+    for (let i = 0; i < page1.length; i++) {
         page1[i].style.display = "block";
         page2[i].style.display = "none";
         // page3[i].style.display = "none";
@@ -52,8 +54,8 @@ function showPage1(){
     counter.innerHTML = "1";
 };
 
-function showPage2(){
-    for(let i = 0; i < page1.length; i++){
+function showPage2() {
+    for (let i = 0; i < page1.length; i++) {
         page1[i].style.display = "none";
         page2[i].style.display = "block";
         // page3[i].style.display = "none";
@@ -86,7 +88,7 @@ function showModal(name) {
     modalContainer.style.display = "flex";
     team.style.display = "none";
 }
-  
+
 function closeModal(name) {
     // When the user clicks on <span> (x), close the modal
     var modalname = name;

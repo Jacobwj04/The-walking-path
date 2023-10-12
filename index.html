@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +13,7 @@
     <script src="js/main.js" defer></script>
     <title>Radiacle Kunstspeeltuin</title>
 </head>
+
 <body>
     <nav class="nav" id="nav">
         <section class="nav__container">
@@ -69,12 +71,19 @@
             <p class="ar__description">Open de app</p>
         </article>
         <article class="ar__container2">
-            <a href="https://xd.adobe.com/view/1b3602e8-33c0-4cb8-aa06-d5fdce29b0dc-4e65/?fullscreen" class="ar__app">Open</a>
+            <a href="https://xd.adobe.com/view/1b3602e8-33c0-4cb8-aa06-d5fdce29b0dc-4e65/?fullscreen"
+                class="ar__app">Open</a>
         </article>
     </section>
     <section class="banner" id="banner">
         <!-- <img src="img/4touchroosegaarde.jpg" alt="" class="banner__img"> -->
-        <video src="video/smoke.mp4" autoplay loop class="banner__video"></video>
+        <video id="vid" src="video/smoke.mp4" autoplay loop class="banner__video"></video>
+        <script>
+            function playVideo() {
+                document.getElementById("vid").play();
+            }
+            playVideo();   
+        </script>
         <article class="banner__text">
             <h2 class="banner__h2--1">RADICALE KUNSTSPEELTUIN</h2>
             <h1 class="banner__h1">THE WALKING PATH</h1>
@@ -93,7 +102,7 @@
             </li>
             <li class="banner__listItemIcon">
                 <a href="https://the-upsidedown.com/">
-                <img src="img/Logo-Upside-Down.png" alt="" class="banner__listItemImg">
+                    <img src="img/Logo-Upside-Down.png" alt="" class="banner__listItemImg">
                 </a>
             </li>
         </ul>
@@ -106,10 +115,11 @@
             <p class="project__p">
                 DE RADICALE SPEELTUIN IS EEN PROJECT WAAR 8 STUDENTEN VAN HET MEDIACOLLEGE IN
 
-                AMSTERDAM AAN HEBBEN GEWERKT. 10 WEKEN LANG ZIJN ZE BEZIG GEWEEST MET HET 
-                
-                BOUWEN VAN EEN NIEUWE KAMER DIE IN HET <a href="" class="project__link">‘UPSIDE DOWN MUSEUM’</a> IN AMSTERDAM 
-                
+                AMSTERDAM AAN HEBBEN GEWERKT. 10 WEKEN LANG ZIJN ZE BEZIG GEWEEST MET HET
+
+                BOUWEN VAN EEN NIEUWE KAMER DIE IN HET <a href="" class="project__link">‘UPSIDE DOWN MUSEUM’</a> IN
+                AMSTERDAM
+
                 GEPLAATST ZOU WORDEN.
             </p>
         </article>
@@ -215,4 +225,5 @@
         </article>
     </section>
 </body>
+
 </html>
