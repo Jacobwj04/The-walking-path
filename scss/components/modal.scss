@@ -1,0 +1,166 @@
+.modal{
+    display: none;
+    min-height: 50rem;
+    border: 0.1rem solid black;
+    border-radius: 2rem;
+    z-index: 1;
+    background: black;
+    width: 80%;
+    animation: modal-popup 0.6s ease-in both;
+    box-shadow: #283583 0 0 2rem 1rem ;
+
+    &__container{
+        margin-top: 10rem;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 90vh;
+        display: none;
+    }
+    
+    &__header{
+        width: 100%;
+        height: 10rem;
+        background: #283583;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 4rem 0 4rem;
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    &__wrapper--1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 6rem;
+        width: 6rem;
+    }
+
+    &__h2{
+        font-size: 3rem;
+        font-weight: 500;
+    }
+
+    &__close{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0.6rem 2rem 1rem 2rem;
+        width: 100%;
+        height: 100%;
+        font-size: 4rem;
+        color: white;
+        background: black;
+        border-radius: 0.5rem;
+
+        &:hover{
+            color: black;
+            background: white;
+            transition: 0.5s;
+            -webkit-animation: rotate-center 0.6s ease-in-out both;
+	        animation: rotate-center 0.6s ease-in-out both;
+            cursor: pointer;
+        }
+    }
+
+    &__main{
+        padding: 2rem;
+        height: 90%;
+        display: flex;
+        margin-bottom: 2rem;
+        min-height: 50rem;
+        background: black;
+    }
+
+    &__foto{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__img{
+        width: 70%;
+        height: auto;
+    }
+
+    &__text{
+        width: 50%;
+        height: 40rem;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    &__h3{
+        font-size: 3rem;
+        font-weight: 500;
+        color: white;
+        text-align: start;
+    }
+
+    &__paragraph{
+        font-size: 1.8rem;
+        color: white;
+        text-align: start;
+    }
+}
+
+@keyframes modal-popup{
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 50rem){
+
+    .modal{
+        width: 95%;
+        margin-bottom: 5rem;
+
+        &__main{
+            flex-wrap: wrap;
+        }
+
+        &__foto{
+            width: 100%;
+        }
+
+        &__img{
+            width: 90%;
+        }
+
+        &__text{
+            width: 100%;
+        }
+    }
+}
+
+@-webkit-keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }

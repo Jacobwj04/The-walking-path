@@ -1,0 +1,22 @@
+.campagne{
+    min-height: 90vh;
+    width: 100vw;
+
+    &__header{
+        height: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__h2{
+        font-size: 2.5rem;
+        color: white;
+    }
+
+    &__video{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}

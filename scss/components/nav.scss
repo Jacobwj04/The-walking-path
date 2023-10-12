@@ -1,0 +1,181 @@
+.nav{
+    height: 10rem;
+    width: 100vw;
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    padding: 0 5rem 0 0;
+    top: 0%;
+    left: 0%;
+
+    &__container{
+        display: flex;
+        width: 30%;
+        padding: 0 0 0 5rem;
+        align-items: center;
+    }
+
+    &__logo{
+        width: 35rem;
+        height: auto;
+        object-fit: cover;
+        
+        &:hover{
+            -webkit-animation: rotate-center 0.6s ease-in-out both;
+            animation: rotate-center 0.6s ease-in-out both;
+        }
+    }
+
+    &__list{
+        width: 70%;
+        display: flex;
+        list-style: none;
+        justify-content: flex-end;
+    }
+
+    &__listItem{
+        width: 13rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__links{
+        color: white;
+        font-size: 2rem;
+        text-decoration: none;
+    }
+
+    &__buttons{
+        display: flex;
+        align-items: center;
+    }
+
+    &__menuButton{
+        width: 8rem;
+        height: 8rem;
+        border: none;
+        background: none;
+    }
+
+    &__icons{
+        font-size: 4rem;
+        color: white;
+    }
+
+    &__menu{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100vw;
+        min-height: 20rem;
+        z-index: 1;
+        background: rgb(0, 0, 0,);
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+    }
+
+    &__menuItems{
+        padding-top: 1rem;
+        width: 20rem;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    &__link{
+        font-size: 2.5rem;
+        color: white;
+        text-decoration: none;
+    }
+}
+
+#buttonMenu{
+    display: none;
+}
+
+#buttonClose{
+    display: none;
+}
+
+@-webkit-keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+
+@keyframes rotate-icon {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+@media screen and (max-width: 58.125rem){
+    .nav{
+        padding: 0rem;
+        position: relative;
+        height: 10rem;
+
+        &__logo{
+            width: 20rem;
+        }
+
+        &__listItem{
+            width: 10rem;
+        }
+    }
+}
+
+@media screen and (max-width: 50rem){
+    .nav{
+        position: relative;
+
+        &__container{
+            width: 80vw;
+            padding-left: 2rem;
+        }
+
+        &__logo{
+            width: 30rem;
+        }
+
+        &__list{
+            display: none;
+        }
+
+        &__listItemIcon{
+            display: none;
+        }
+
+        &__listItemImg{
+            width: 6rem;
+            height: auto;
+        }
+    }
+
+    #buttonMenu{
+        display: block;
+    }
+}
+  
+

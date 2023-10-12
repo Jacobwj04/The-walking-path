@@ -1,0 +1,99 @@
+.banner{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+
+    &__img{
+        height: 90vh;
+        width: 100%;
+    }
+
+    &__text{
+        position: absolute;
+        top: 40%;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    &__h2{
+        color: white;
+        font-size: 2.5rem;
+        font-weight: 300;
+    }
+
+    &__h2--1{
+        color: white;
+        font-size: 2.5rem;
+        font-weight: 300;
+    }
+
+    &__h1{
+        color: white;
+        font-size: 8rem;
+        font-weight: 500;
+    }
+
+    &__video{
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__listIcons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: 10rem;
+        height: 15rem;
+        position: absolute;
+        top: 80%;
+        right: 3%;
+        gap: 1rem;
+        z-index: 1;
+    }
+
+    &__listItemIcon{
+        display: flex;
+    }
+
+    &__linkIcon{
+        width: 5rem;
+    }
+
+    &__icon{
+        font-size: 4rem;
+        color: white;
+    }
+
+    &__listItemImg{
+        height: 6rem;
+        width: auto;
+        object-fit: cover;
+
+        &:hover{
+            animation: rotate-icon 0.6s ease-in;
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 50rem){
+    .banner{
+
+        &__text{
+            top: 15%;
+        }
+        
+        &__listItemIcon{
+            display: none;
+        }
+    }
+}

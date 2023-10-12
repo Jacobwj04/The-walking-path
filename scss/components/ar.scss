@@ -1,0 +1,71 @@
+.ar{
+    height: 8rem;
+    width: 100vw;
+    display: flex;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    z-index: 1;
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+        padding-left: 4rem;
+        width: 80%;
+        justify-content: center;
+    }
+
+    &__h2{
+        font-size: 2rem;
+        font-weight: 500;
+        color: white;
+    }
+
+    &__description{
+        font-size: 1.5rem;
+        color: white;
+    }
+
+    &__container2{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 4rem;
+        width: 20%;
+    }
+
+    &__app{
+        background: #00337C;
+        padding: 1.2rem;
+        width: 10rem;
+        text-align: center;
+        font-size: 1.7rem;
+        border-radius: 2rem;
+        text-decoration: none;
+        color: white;
+        font-weight: 700;
+
+        &:hover{
+            cursor: pointer;
+            background: #5BC0F8;
+            transition: 0.6s;
+        }
+    }
+}
+
+@media screen and (max-width: 50rem){
+    .ar{
+
+        &__container{
+            width: 60%;
+        }
+
+        &__h2{
+            font-size: 1.7rem;
+        }
+
+        &__container2{
+            width: 40%;
+        }
+    }
+}
